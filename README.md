@@ -67,6 +67,16 @@ docker run \
   codeclimate/codeclimate help
 ```
 
+On windows:
+```powershell
+docker run `
+  --interactive --tty --rm `
+  --env CODECLIMATE_CODE="$(pwd)" `
+  --volume "$(pwd):/code" `
+  --volume /var/run/docker.sock:/var/run/docker.sock `
+  codeclimate/codeclimate help
+```
+
 ## Project setup
 
 ### Configuration
@@ -177,6 +187,29 @@ The following is a brief explanation of each available command.
   # 2,000,000,000 bytes
   ENGINE_MEMORY_LIMIT_BYTES=2000000000 codeclimate analyze
   ```
+
+## Releasing a new version
+
+CLI's new versions are released automatically when updating
+[VERSION](https://github.com/codeclimate/codeclimate/blob/master/VERSION) on `master`.
+
+The releasing process includes;
+
+1. Push new version to rubygems.
+1. Create a new release on Github and an associated tag.
+1. Update docker images:
+  * Push new `latest` image.
+  * Push new image with latest version as tag.
+
+Ideally someone will open a pull request against master updating only
+[VERSION](https://github.com/codeclimate/codeclimate/blob/master/VERSION).
+
+There is script in place, which assumes [hub](https://hub.github.com/) is installed,
+to facilitate that. Check the current VERSION (`cat VERSION`) and upgrade accordingly running:
+
+```sh
+./bin/prep-release <VERSION>
+```
 
 ## Copyright
 

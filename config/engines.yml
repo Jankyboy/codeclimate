@@ -10,18 +10,29 @@ apexmetrics:
 bandit:
   channels:
     stable: codeclimate/codeclimate-bandit
+    beta: codeclimate/codeclimate-bandit:beta
+    bandit-1-7-4: codeclimate/codeclimate-bandit:bandit-1-7-4
   description: A tool designed to find common security issues in Python code.
+black:
+  channels:
+    stable: codeclimate/codeclimate-black
+  description: black is a tool to check your Python code is formatted in accordance with black style guide.
 brakeman:
   channels:
     stable: codeclimate/codeclimate-brakeman
+    beta: codeclimate/codeclimate-brakeman:beta
+    brakeman-5-4-1: codeclimate/codeclimate-brakeman:brakeman-5-4-1
+    brakeman-6-0-1: codeclimate/codeclimate-brakeman:brakeman-6-0-1
   description: A static analysis tool which checks Ruby on Rails applications for security vulnerabilities.
 bundler-audit:
   channels:
     stable: codeclimate/codeclimate-bundler-audit
+    bundler-audit-0-9-1: codeclimate/codeclimate-bundler-audit:bundler-audit-0-9-1
   description: Patch-level verification for Bundler.
 checkstyle:
   channels:
     stable: codeclimate/codeclimate-checkstyle
+    checkstyle-10-7-0: codeclimate/codeclimate-checkstyle:checkstyle-10-7-0
   description: Helps programmers write Java that adheres to a coding standard.
 csslint:
   channels:
@@ -48,6 +59,11 @@ credo:
   description: >
     A static code analysis tool for the Elixir language with a focus on code
     consistency and teaching.
+dart:
+  channels:
+    stable: codeclimate/codeclimate-dart
+  description: >
+    A static analysis tool that helps improve code quality for the Dart language.
 duplication:
   channels:
     stable: codeclimate/codeclimate-duplication
@@ -72,10 +88,13 @@ eslint:
     eslint-5: codeclimate/codeclimate-eslint:eslint-5
     eslint-6: codeclimate/codeclimate-eslint:eslint-6
     eslint-7: codeclimate/codeclimate-eslint:eslint-7
+    eslint-8: codeclimate/codeclimate-eslint:eslint-8
   description: A JavaScript/JSX linting utility.
 flog:
   channels:
     stable: codeclimate/codeclimate-flog
+    beta: codeclimate/codeclimate-flog:beta
+    flog-4-6-6: codeclimate/codeclimate-flog:flog-4-6-6
   description: Easy to read reporting of complexity/pain for Ruby code.
 git-legal:
   channels:
@@ -85,6 +104,11 @@ gofmt:
   channels:
     stable: codeclimate/codeclimate-gofmt
   description: Checks the formatting of Go programs.
+golangci-lint:
+  channels:
+    stable: codeclimate/codeclimate-golangci-lint
+    beta: codeclimate/codeclimate-golangci-lint:beta
+    golangci-lint-1-52-2: codeclimate/codeclimate-golangci-lint:golangci-lint-1-52-2
 golint:
   channels:
     stable: codeclimate/codeclimate-golint
@@ -105,10 +129,6 @@ foodcritic:
   channels:
     stable: codeclimate/codeclimate-foodcritic
   description: Lint tool for Chef cookbooks.
-git-legal:
-  channels:
-    stable: codeclimate/codeclimate-git-legal
-  description: License compliance and compatibility analysis.
 gnu-complexity:
   channels:
     stable: codeclimate/codeclimate-gnu-complexity
@@ -137,6 +157,8 @@ luacheck:
 markdownlint:
   channels:
     stable: codeclimate/codeclimate-markdownlint
+    beta: codeclimate/codeclimate-markdownlint:beta
+    markdownlint-0-12-0: codeclimate/codeclimate-markdownlint:markdownlint-0-12-0
   description: Flags style issues within Markdown files.
 nodesecurity:
   channels:
@@ -149,10 +171,12 @@ pep8:
 phan:
   channels:
     stable: codeclimate/codeclimate-phan
+    beta: codeclimate/codeclimate-phan:beta
   description: Phan is a static analyzer for PHP.
 phpcodesniffer:
   channels:
     stable: codeclimate/codeclimate-phpcodesniffer
+    beta: codeclimate/codeclimate-phpcodesniffer:beta
   description: Detects violations of a defined set of coding standards in PHP.
 phpmd:
   channels:
@@ -161,6 +185,7 @@ phpmd:
 pmd:
   channels:
     stable: codeclimate/codeclimate-pmd
+    beta: codeclimate/codeclimate-pmd:beta
   description: A source code analyzer for Java.
 pylint:
   channels:
@@ -185,6 +210,7 @@ requiresafe:
 rubocop:
   channels:
     stable: codeclimate/codeclimate-rubocop
+    beta: codeclimate/codeclimate-rubocop:beta
     cache-support: codeclimate/codeclimate-rubocop:cache-support
     rubocop-0-42: codeclimate/codeclimate-rubocop:rubocop-0-42
     rubocop-0-46: codeclimate/codeclimate-rubocop:rubocop-0-46
@@ -216,6 +242,7 @@ rubocop:
     rubocop-0-74: codeclimate/codeclimate-rubocop:rubocop-0-74
     rubocop-0-75: codeclimate/codeclimate-rubocop:rubocop-0-75
     rubocop-0-76: codeclimate/codeclimate-rubocop:rubocop-0-76
+    rubocop-0-76-airbnb: codeclimate/codeclimate-rubocop:rubocop-0-76-airbnb
     rubocop-0-77: codeclimate/codeclimate-rubocop:rubocop-0-77
     rubocop-0-78: codeclimate/codeclimate-rubocop:rubocop-0-78
     rubocop-0-79: codeclimate/codeclimate-rubocop:rubocop-0-79
@@ -230,6 +257,26 @@ rubocop:
     rubocop-0-88: codeclimate/codeclimate-rubocop:rubocop-0-88
     rubocop-0-89: codeclimate/codeclimate-rubocop:rubocop-0-89
     rubocop-0-90: codeclimate/codeclimate-rubocop:rubocop-0-90
+    rubocop-0-92: codeclimate/codeclimate-rubocop:rubocop-0-92
+    rubocop-1-7-0: codeclimate/codeclimate-rubocop:rubocop-1-7-0
+    rubocop-1-8-1: codeclimate/codeclimate-rubocop:rubocop-1-8-1
+    rubocop-1-9-1: codeclimate/codeclimate-rubocop:rubocop-1-9-1
+    rubocop-1-10-0: codeclimate/codeclimate-rubocop:rubocop-1-10-0
+    rubocop-1-11-0: codeclimate/codeclimate-rubocop:rubocop-1-11-0
+    rubocop-1-12-0: codeclimate/codeclimate-rubocop:rubocop-1-12-0
+    rubocop-1-12-1: codeclimate/codeclimate-rubocop:rubocop-1-12-1
+    rubocop-1-18-2: codeclimate/codeclimate-rubocop:rubocop-1-18-2
+    rubocop-1-18-3: codeclimate/codeclimate-rubocop:rubocop-1-18-3
+    rubocop-1-20-0: codeclimate/codeclimate-rubocop:rubocop-1-20-0
+    rubocop-1-21-0: codeclimate/codeclimate-rubocop:rubocop-1-21-0
+    rubocop-1-22-2: codeclimate/codeclimate-rubocop:rubocop-1-22-2
+    rubocop-1-22-3: codeclimate/codeclimate-rubocop:rubocop-1-22-3
+    rubocop-1-23-0: codeclimate/codeclimate-rubocop:rubocop-1-23-0
+    rubocop-1-30-0: codeclimate/codeclimate-rubocop:rubocop-1-30-0
+    rubocop-1-31-0: codeclimate/codeclimate-rubocop:rubocop-1-31-0
+    rubocop-1-39-0: codeclimate/codeclimate-rubocop:rubocop-1-39-0
+    rubocop-1-48-1: codeclimate/codeclimate-rubocop:rubocop-1-48-1
+    rubocop-1-56-3: codeclimate/codeclimate-rubocop:rubocop-1-56-3
   description: A Ruby static code analyzer, based on the community Ruby style guide.
 rubymotion:
   channels:
@@ -249,15 +296,23 @@ scss-lint:
   channels:
     stable: codeclimate/codeclimate-scss-lint
   description: A configurable tool for writing clean and consistent SCSS.
+semgrep:
+  channels:
+    stable: codeclimate/codeclimate-semgrep
+  description: A configurable tool that allows for custom static analysis on multiple languages.
 shellcheck:
   channels:
     stable: codeclimate/codeclimate-shellcheck
+    beta: codeclimate/codeclimate-shellcheck:beta
+    shellcheck-0-9-0: codeclimate/codeclimate-shellcheck:shellcheck-0-9-0
   description: A static analysis tool for shell scripts.
 sonar-java:
   channels:
     stable: codeclimate/codeclimate-sonar-java
-    beta: codeclimate/codeclimate-sonar-java:sonar-java-5-14
+    beta: codeclimate/codeclimate-sonar-java:beta
+    sonar-java-7-2: codeclimate/codeclimate-sonar-java:sonar-java-7-2
     sonar-java-5-14: codeclimate/codeclimate-sonar-java:sonar-java-5-14
+    sonar-java-4-14: codeclimate/codeclimate-sonar-java:sonar-java-4-14
   description: Over 400 checks for bugs, vulnerabilities, and code smells in Java code.
   minimum_memory_limit: 2_048_000_000
 sonar-php:
@@ -270,13 +325,20 @@ sonar-python:
     stable: codeclimate/codeclimate-sonar-python
   description: SonarLint for Python.
   minimum_memory_limit: 2_048_000_000
+standard:
+  channels:
+    stable: codeclimate/codeclimate-standard
+    beta: codeclimate/codeclimate-standard
+  description: Standard static analysis tool.
 structure:
   channels:
     stable: codeclimate/codeclimate-structure
   description: Performs structural checks on code.
 stylelint:
   channels:
+    beta: codeclimate/codeclimate-stylelint:beta
     stable: codeclimate/codeclimate-stylelint
+    stylelint-14-15-0: codeclimate/codeclimate-stylelint:stylelint-14-15-0
   description: A mighty, modern CSS linter.
 swiftlint:
   channels:
@@ -286,6 +348,11 @@ tailor:
   channels:
     stable: codeclimate/codeclimate-tailor
   description: Cross-platform static analyzer and linter for Swift.
+tflint:
+  channels:
+    beta: codeclimate/codeclimate-tflint:beta
+    stable: codeclimate/codeclimate-tflint
+  description: A pluggable Terraform linter.
 tslint:
   channels:
     stable: codeclimate/codeclimate-tslint
